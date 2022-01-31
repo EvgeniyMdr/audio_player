@@ -31,7 +31,7 @@ class CustomListTile extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16),
                   image: DecorationImage(image: NetworkImage(coverUrl))),
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             Column(
@@ -39,14 +39,15 @@ class CustomListTile extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.w600),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   singer,
-                  style: TextStyle(color: Colors.grey, fontSize: 16),
+                  style: const TextStyle(color: Colors.grey, fontSize: 16),
                 )
               ],
             )

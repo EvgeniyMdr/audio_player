@@ -28,39 +28,43 @@ class MusicApp extends StatefulWidget {
 
 List musicList = [
   {
-    'title': 'Tech House vibes',
+    'title': 'Serene View',
+    'singer': 'by Eugeny MMD',
+    'url':
+        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-129.mp3',
+    'coverUrl':
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtxVomZYTyflYDw4pe_pleBjRXJnlIvDsvA&usqp=CAU',
+  },
+  {
+    'title': 'Dance with me',
     'singer': 'by Alejandro Magaña (A. M.)',
     'url':
         'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3',
+    'coverUrl':
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS570OtrR8u3DsrykCEtnf94bM6AaciEN-w&usqp=CAU',
+  },
+  {
+    'title': 'Tech House',
+    'singer': '(A. M.)',
+    'url':
+        'https://assets.mixkit.co/music/preview/mixkit-hazy-after-hours-132.mp3',
     'coverUrl': 'https://www.bravolyrics.ru/_pu/533/s99770445.jpg',
   },
   {
-    'title': 'Tech House vibes',
-    'singer': 'by Alejandro Magaña (A. M.)',
+    'title': 'Deep urban',
+    'singer': 'by Max USS (A. M.)',
     'url':
-        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3',
-    'coverUrl': 'https://www.bravolyrics.ru/_pu/533/s99770445.jpg',
+        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-131.mp3',
+    'coverUrl':
+        'https://muzlive.info/uploads/posts/2020-04/1586706694_cover.jpg',
   },
   {
-    'title': 'Tech House vibes',
-    'singer': 'by Alejandro Magaña (A. M.)',
+    'title': 'Complicated',
+    'singer': 'by Araluo (A. M.)',
     'url':
-        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3',
-    'coverUrl': 'https://www.bravolyrics.ru/_pu/533/s99770445.jpg',
-  },
-  {
-    'title': 'Tech House vibes',
-    'singer': 'by Alejandro Magaña (A. M.)',
-    'url':
-        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3',
-    'coverUrl': 'https://www.bravolyrics.ru/_pu/533/s99770445.jpg',
-  },
-  {
-    'title': 'Tech House vibes',
-    'singer': 'by Alejandro Magaña (A. M.)',
-    'url':
-        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3',
-    'coverUrl': 'https://www.bravolyrics.ru/_pu/533/s99770445.jpg',
+        'https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-133.mp3',
+    'coverUrl':
+        'https://avatars.mds.yandex.net/get-zen_doc/1781308/pub_5d88980698fe7900b045f305_5d8899d695aa9f00b1375c80/scale_1200',
   },
 ];
 
