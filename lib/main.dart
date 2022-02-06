@@ -75,6 +75,8 @@ class _MusicAppState extends State<MusicApp> {
 
   IconData btnIcon = Icons.play_arrow;
 
+  double dur = 0;
+
   Duration duration = Duration();
   Duration position = Duration();
   AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.MEDIA_PLAYER);
@@ -108,6 +110,13 @@ class _MusicAppState extends State<MusicApp> {
       setState(() {
         position = event;
       });
+    });
+  }
+
+  void setNewPosinionPlayer(double val) async {
+    await audioPlayer.seek(Duration(seconds: val.toInt()));
+    setState(() {
+      position = Duration(seconds: val.toInt());
     });
   }
 
@@ -168,6 +177,18 @@ class _MusicAppState extends State<MusicApp> {
                       ],
                     ),
                   ),
+                  if (duration.inSeconds > 0)
+                    Slider.adaptive(
+                        max: duration.inSeconds != null
+                            ? duration.inSeconds.toDouble()
+                            : 1,
+                        min: 0,
+                        value: position.inSeconds != null
+                            ? position.inSeconds.toDouble()
+                            : 1,
+                        onChanged: (value) {
+                          setNewPosinionPlayer(value);
+                        }),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
