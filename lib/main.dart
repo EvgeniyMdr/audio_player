@@ -117,7 +117,7 @@ class _MusicAppState extends State<MusicApp> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'Мой прейлист',
           style: TextStyle(color: Colors.black),
         ),
